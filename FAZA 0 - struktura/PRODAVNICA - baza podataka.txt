@@ -1,0 +1,6 @@
+prodavnica/
+└── database/
+    ├── schema.sql        
+    ├     ├ users, products, cart_items, orders    // tabele
+    ├      
+    └── seed.sql          // početni proizvodi (5–6 artikala)

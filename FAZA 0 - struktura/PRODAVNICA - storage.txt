@@ -1,0 +1,6 @@
+prodavnica 
+   \-> storage
+            \-> pictures
+             \-> videos
+              \-> documents
+               \-> logs

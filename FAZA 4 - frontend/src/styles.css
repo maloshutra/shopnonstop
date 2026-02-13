@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        min-height: 100vh;
+        background-color: #f9f9f9; /* blaga pozadina za ceo body */
+    }
+
+    /* Levi vertikalni meni */
+    nav {
+        width: 200px;
+        background-color: #e6f0ff; /* lagana plava */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    nav img {
+        max-width: 80%;
+        height: auto;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        margin: 5px 0;
+        padding: 8px 15px;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    }
+    /* Hover efekti sa interesantnim bojama, suptilno */
+    nav a:nth-child(2):hover { background-color: #ffd966; color: #222; transform: scale(1.05); } /* Home - svetla žuta */
+    nav a:nth-child(3):hover { background-color: #ff9f80; color: #fff; transform: scale(1.05); } /* Products - bledo narandžasta */
+    nav a:nth-child(4):hover { background-color: #99e699; color: #fff; transform: scale(1.05); } /* About - nežna zelena */
+    nav a:nth-child(5):hover { background-color: #80cfff; color: #fff; transform: scale(1.05); } /* Contact - svetla plava */
+
+    /* Glavni sadržaj */
+    main {
+        flex: 1;
+        padding: 40px;
+        background-color: #fff;
+    }
+
+    /* Footer */
+    footer {
+        color: #333;
+        padding: 5px 2px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: calc(100% - 200px); /* da se poravna sa desnim sadržajem */
+        left: 200px;
+        background-color: #f0f8ff; /* blaga plava pozadina */
+        border-top: 1px solid #ccc;
+    }

@@ -1,0 +1,32 @@
+prodavnica/
+└── backend/
+    ├── package.json
+    ├── package-lock.json
+    ├── .env
+    │
+    └── src/
+        ├── server.js               // ulazna tačka aplikacije
+        │
+        ├── config/
+        │   └── db.js               // MySQL konekcija
+        │
+        ├── routes/
+        │   ├── auth.routes.js
+        │   ├── product.routes.js
+        │   └── cart.routes.js
+        │
+        ├── controllers/
+        │   ├── auth.controller.js
+        │   ├── product.controller.js
+        │   └── cart.controller.js
+        │
+        ├── middleware/
+        │   └── auth.middleware.js
+        │
+        ├── models/
+        │   ├── user.model.js
+        │   ├── product.model.js
+        │   └── cart.model.js
+        │
+        └── utils/
+            └── jwt.js

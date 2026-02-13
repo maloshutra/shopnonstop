@@ -1,0 +1,61 @@
+prodavnica/
+└── frontend/
+    ├── angular.json
+    ├── package.json
+    ├── tsconfig.json
+    ├── tsconfig.app.json
+    ├── tsconfig.spec.json
+    ├── public/
+    │   └── index.html
+    │
+    └── src/
+        ├── main.ts
+        ├── styles.css
+        │
+        ├── app/
+        │   ├── app.config.ts        // globalni Angular config (routing, providers)
+        │   ├── app.routes.ts        // rute aplikacije
+        │   │
+        │   ├── core/                // globalne stvari (1 instanca)
+        │   │   ├── services/
+        │   │   │   ├── auth.service.ts
+        │   │   │   ├── product.service.ts
+        │   │   │   └── cart.service.ts
+        │   │   │
+        │   │   ├── guards/
+        │   │   │   └── auth.guard.ts
+        │   │   │
+        │   │   └── interceptors/
+        │   │       └── auth.interceptor.ts
+        │   │
+        │   ├── features/            // funkcionalne cjeline (stranice)
+        │   │   ├── auth/
+        │   │   │   ├── login/
+        │   │   │   └── register/
+        │   │   │
+        │   │   ├── products/
+        │   │   │   ├── product-list/
+        │   │   │   └── product-details/
+        │   │   │
+        │   │   ├── cart/
+        │   │   │   └── cart-page/
+        │   │   │
+        │   │   └── checkout/
+        │   │       └── checkout-page/
+        │   │
+        │   ├── shared/              // ponovo upotrebljive komponente
+        │   │   ├── components/
+        │   │   │   ├── navbar/
+        │   │   │   └── product-card/
+        │   │   │
+        │   │   └── models/
+        │   │       ├── user.model.ts
+        │   │       ├── product.model.ts
+        │   │       └── cart-item.model.ts
+        │   │
+        │   └── environments/
+        │       ├── environment.ts
+        │       └── environment.prod.ts
+        │
+        └── assets/
+            └── images/
